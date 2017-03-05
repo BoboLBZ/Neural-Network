@@ -1,5 +1,5 @@
-%„¢²¨ÖŞ
-% (1)Given 1-d Gaussian function, draw it. (Mean Åc variance ×ÔÓ†)
+%åŠ‰æ³¢æ´²
+% (1)Given 1-d Gaussian function, draw it. (Mean èˆ‡ variance è‡ªè¨‚)
 %clear
 %mean=3;
 % sigma=2;
@@ -7,7 +7,7 @@
 % y=(1/(sqrt(2*pi)*sigma))*exp(-((x-mean).^2)/(2*sigma.^2));
 % plot(x,y,'-g','linewidth',1.5);
 
-% (2) Given 2-d Gaussian function, draw it. (Mean Åc covariance matrix ×ÔÓ†)
+% (2) Given 2-d Gaussian function, draw it. (Mean èˆ‡ covariance matrix è‡ªè¨‚)
 %clear
 % mean=[1 2];
 % sigma=[1 0;0 1];
@@ -22,7 +22,7 @@
 % sigma=1;
 % h=histogram(randn(10000,1)*sqrt(sigma)+mean);
 
-%(4) Call 2-d Gaussian random data. ücÔÚ2-d space ÉÏ¡£ Plot 2-d histogram.
+%(4) Call 2-d Gaussian random data. é»åœ¨2-d space ä¸Šã€‚ Plot 2-d histogram.
 clear
 mu=[1;2];
 sigma=[3 0;0 4];
@@ -32,7 +32,7 @@ plot(m(:,1),m(:,2),'.');
 figure(2)
 hist3(m,{-10:0.5:10 -10:0.5:10});
 
-%£¨5£©³Ğ(4)£¬ÔÚ2-d histogram ÉÏ®‹µÈ¸ß¾€ˆD¡£Ã»Ğ´³öÀ´
+%ï¼ˆ5ï¼‰æ‰¿(4)ï¼Œåœ¨2-d histogram ä¸Šç•«ç­‰é«˜ç·šåœ–ã€‚æ²¡å†™å‡ºæ¥
 figure(3)
 h=hist3(m);
 [C,h]=contour(h);
@@ -58,22 +58,22 @@ clabel(C,h)
 % fimplicit(@(x,y) x.^2 - (y.^2) /4- 1);
 % axis equal
 
-%(10) Generate data of line 2x-y=0 and plot. (®aÉú 100 üc£¬®‹ÔÚ2-d ÉÏ)
+%(10) Generate data of line 2x-y=0 and plot. (ç”¢ç”Ÿ 100 é»ï¼Œç•«åœ¨2-d ä¸Š)
 % x=100*rand(1,100);
 % plot(x,2*x,'+');
 
-%(11) Generate data of circle x2+y2=4 and plot. (®aÉú 100 üc£¬®‹ÔÚ2-d ÉÏ)
+%(11) Generate data of circle x2+y2=4 and plot. (ç”¢ç”Ÿ 100 é»ï¼Œç•«åœ¨2-d ä¸Š)
 % theta=2*pi*rand(1,100);
 % plot(cos(theta),sin(theta),'+');
 % axis equal
 
-%(12) Generate data of ellipse x2/4+y2 =1 and plot. (®aÉú 100 üc£¬®‹ÔÚ2-d ÉÏ)
+%(12) Generate data of ellipse x2/4+y2 =1 and plot. (ç”¢ç”Ÿ 100 é»ï¼Œç•«åœ¨2-d ä¸Š)
 % clear
 % theta=2*pi*rand(1,100);
 % plot(2*cos(theta),sin(theta),'+');
 % axis equal
 
-%(13) Generate data of hyperbola xy=1 and plot. (®aÉú 100 üc£¬®‹ÔÚ2-d ÉÏ)
+%(13) Generate data of hyperbola xy=1 and plot. (ç”¢ç”Ÿ 100 é»ï¼Œç•«åœ¨2-d ä¸Š)
 % clear
 % x=-1:0.02:1;
 % y=1./x;
@@ -91,7 +91,7 @@ clabel(C,h)
 % hold off
 % axis equal
 
-%(15)Plot 8 points in the three dimensional space, and the plane z = x ¨C y + 0.5 that can
+%(15)Plot 8 points in the three dimensional space, and the plane z = x â€“ y + 0.5 that can
 %    separate these two classes.
 % clear
 % x=0:1;
@@ -125,7 +125,7 @@ clabel(C,h)
 % 
 % dataTargets=hardlim(Y);
 % dataTargets=dataTargets.*1.0;
-%  %¾àëxµ÷Õû²ÎÊı-----------------
+%  %è·é›¢è°ƒæ•´å‚æ•°-----------------
 %  dv = -5;
 %  dh = 10;
 %  f=find(Y<0);
@@ -142,9 +142,9 @@ clabel(C,h)
 %  
  
 %17. Given 5 sine function with different periods (different frequencies), 
-% ÀûÓÃ„Ó®‹ï@Ê¾ß@ 5 ‚€ sine functions¡£ßLÆÚé T0, T0/2, ¡­, T0/5.
-% T0Åcfunction È¡˜ÓµÄüc”µ×ÔÓ†¡£
-% „Ó®‹ï@Ê¾µÄ¿ìÂıÓÉ×Ô¼º›Q¶¨»òÒÔ10 Ãë¡¢20 Ãë¡¢¼°30 Ãë×÷„Ó®‹ï@Ê¾¡£
+% åˆ©ç”¨å‹•ç•«é¡¯ç¤ºé€™ 5 å€‹ sine functionsã€‚é€±æœŸç‚º T0, T0/2, â€¦, T0/5.
+% T0èˆ‡function å–æ¨£çš„é»æ•¸è‡ªè¨‚ã€‚
+% å‹•ç•«é¡¯ç¤ºçš„å¿«æ…¢ç”±è‡ªå·±æ±ºå®šæˆ–ä»¥10 ç§’ã€20 ç§’ã€åŠ30 ç§’ä½œå‹•ç•«é¡¯ç¤ºã€‚
 % clear M
 % x=0:0.01:2*pi;
 % set(gca,'XTick',0:pi/2:2*pi);
@@ -157,7 +157,7 @@ clabel(C,h)
 
 
 
-% 18. Design a uniform random number generator. (±Øíš×ö·ÖÎö£¬ÈçºÎÔOÓ‹?)
+% 18. Design a uniform random number generator. (å¿…é ˆåšåˆ†æï¼Œå¦‚ä½•è¨­è¨ˆ?)
 % (a) Given a seed number (SEED) and number of data (RANDX), generate random
 % values between 0.0 and 1.0.
 % (b) Extend to the values between a lower bound and an upper bound.
@@ -181,10 +181,10 @@ clabel(C,h)
 
 
 
-% 19. Design a Gaussian (normal) random number generator. (±Øíš×ö·ÖÎö£¬ÈçºÎÔOÓ‹?)
+% 19. Design a Gaussian (normal) random number generator. (å¿…é ˆåšåˆ†æï¼Œå¦‚ä½•è¨­è¨ˆ?)
 % (a) Given a seed number (SEED) and number of data (RANDX), generate random
 % values with mean 0 and standard deviation 1, i.e., N(0, 1).
-% (b) Modify to mean m and standard deviation ¦Ò, i.e., N(m, ¦Ò2).
+% (b) Modify to mean m and standard deviation Ïƒ, i.e., N(m, Ïƒ2).
 % clear
 % SEED=6462;
 % RANDX=100000;
