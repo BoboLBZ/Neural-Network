@@ -1,6 +1,6 @@
 %(a)
 %use multi-class linear discriminant functions to find the discriminant functions, the
-%linear decision boundaries, and regions¡£
+%linear decision boundaries, and regionsÂ¡Â£
 clear
 %--------generate training data-----------%
 mu=[0 0]';
