@@ -1,5 +1,5 @@
-    %multi-class linear perceptrons to find the ¡°decision regions¡±¡£
-%Activation functions žé sigmoidal function¡£
+    %multi-class linear perceptrons to find the Â¡Â°decision regionsÂ¡Â±Â¡Â£
+%Activation functions Å¾Ã© sigmoidal functionÂ¡Â£
 clear
 %--------generate training data-----------%
 mu=[0 0]';
