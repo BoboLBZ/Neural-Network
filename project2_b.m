@@ -1,5 +1,5 @@
 %multi-class linear perceptrons to find the linear decision boundaries and
-%regions¡£Activation functions žé hardlimiter function¡£
+%regionsÂ¡Â£Activation functions Å¾Ã© hardlimiter functionÂ¡Â£
 clear
 %--------generate training data-----------%
 mu=[0 0]';
